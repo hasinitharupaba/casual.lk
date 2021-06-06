@@ -47,6 +47,15 @@ body {
   display: flex;
 }
 
+/* 
+ *mobile media query
+ */
+ @media screen and (max-width:400px) {
+  .header .navigation {
+    display: none;
+  }
+}
+
 .header .logo a {
   color: #1f4dff;
   text-transform: uppercase;
@@ -86,6 +95,15 @@ body {
   flex: 0 0 260px;
 }
 
+/* 
+ *mobile media query
+ */
+ @media screen and (max-width:400px) {
+  .wrapper .sidebar {
+    display: none;
+  }
+}
+
 .wrapper .sidebar .sidebar-heading {
   margin-bottom: 20px;
 }
@@ -97,6 +115,7 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
 
 .wrapper .sidebar .sidebar-navigation li a:hover {
   color: #1f4dff;
@@ -114,6 +133,14 @@ body {
   flex: 1;
   width: 100%;
 }
+/* 
+ *mobile media query for page content 
+ */
+ @media screen and (max-width: 400px) {
+   .wrapper .page-content {
+     padding-left: 0;
+   }
+ }
 
 .wrapper .page-content .banner {
   display: flex;
@@ -370,6 +397,10 @@ width: 100%;
   margin-bottom: 8px;
 }
 
+.agree-button-div {
+  display: block;
+}
+
 .submit-button {
   display: flex;
   flex-direction: column;
@@ -460,6 +491,7 @@ margin-bottom: 40px;
   border-radius: 4px;
 }
 
+
 /* 
  * single clothing category page
  */
@@ -477,7 +509,15 @@ margin-bottom: 40px;
   row-gap: 12px;
   justify-content: space-between;
 }
-
+/* 
+ *mobile media query for page content 
+ */
+ @media screen and (max-width: 400px) {
+  .clothes {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .clothes .single-cloth {
   display: flex;
   flex-wrap: wrap;
