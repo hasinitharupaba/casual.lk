@@ -40,7 +40,7 @@ body {
   padding-top: 36px;
   padding-left: 40px;
   padding-right: 40px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #6B7199;
 }
 
 .header .navigation {
@@ -57,18 +57,13 @@ body {
 }
 
 .header .logo a {
-  color: #1f4dff;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 700;
-  text-decoration: none;
-  width: 400px;
-  height: 200px;
+  display: flex;
 }
 
 .header .logo a img {
-  width: 300px;
-  height: 60px;}
+  display: flex;
+  height: 60px;
+}
 
 .header .navigation li a {
   color: #000;
@@ -97,7 +92,7 @@ body {
   width: 393px;
   padding-top: 40px;
   padding-bottom: 40px;
-  border-right: 1px solid #000;
+  border-right: 1px solid #6B7199;
   flex: 0 0 260px;
 }
 
@@ -106,6 +101,10 @@ body {
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 10px;
+}
+
+.wrapper .sidebar .sidebar-navigation li a.active{
+  color: blue;
 }
 
 /* 
@@ -200,7 +199,7 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   justify-content: space-between;
-  border-top: 1px solid #000;
+  border-top: 1px solid #6B7199;
 }
 
 .footer .copy-rights {
@@ -542,7 +541,7 @@ margin-bottom: 40px;
   width: 300px;
   height: 380px;
   border-radius: 4px;
-  border: 2px solid black;
+  border: 2px solid #C7CDEE;
 }
 
 .clothing-thumbnail {
