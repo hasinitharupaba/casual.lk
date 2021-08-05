@@ -62,7 +62,13 @@ body {
   font-size: 40px;
   font-weight: 700;
   text-decoration: none;
+  width: 400px;
+  height: 200px;
 }
+
+.header .logo a img {
+  width: 300px;
+  height: 60px;}
 
 .header .navigation li a {
   color: #000;
@@ -93,6 +99,13 @@ body {
   padding-bottom: 40px;
   border-right: 1px solid #000;
   flex: 0 0 260px;
+}
+
+.sidebar-navigation li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 /* 
@@ -223,8 +236,12 @@ body {
  * product cards
  */
 .product-list .product-cards {
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
 }
+
 
 /* 
  * product
@@ -233,9 +250,8 @@ body {
   display: flex;
   flex-direction: column;
   border: 2px solid black;
-  width: 300px;
-  border-radius: 5px;
-  margin-bottom: 40px;
+  width: 100%;
+  border-radius: 4px;
 }
 
 .product .thumbnail {
@@ -247,6 +263,7 @@ body {
   height: 250px;
   object-fit: cover;
   object-position: center;
+  border-radius:4px 4px 0px 0px;
 }
 
 .product .product-content {
@@ -443,7 +460,7 @@ margin-bottom: 40px;
 .categories .product-categories {
  display: flex;
  flex-wrap: wrap;
- justify-content: space-between;
+ justify-content: space-evenly;
 }
 
 .single-category{
@@ -457,6 +474,7 @@ margin-bottom: 40px;
 .single-category .single-category-content {
   display: flex;
   flex-direction: column;
+  width:100%
 }
 
 .single-category .category-thumbnail {
@@ -485,7 +503,7 @@ margin-bottom: 40px;
 .product-article img {
   width: 100%;
   height: 200px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   object-fit: cover;
   object-position: center;
   border-radius: 4px;
@@ -504,10 +522,9 @@ margin-bottom: 40px;
 .clothes {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 12px;
-  row-gap: 12px;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
 }
 /* 
  *mobile media query for page content 
@@ -524,12 +541,17 @@ margin-bottom: 40px;
   justify-content: space-between;
   width: 300px;
   height: 380px;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 2px solid black;
 }
 
 .clothing-thumbnail {
   display: flex;
+  width:100%
+}
+.clothing-thumbnail a {
+  display: flex;
+  width:100%
 }
 
 .clothing-thumbnail img {
@@ -537,6 +559,7 @@ margin-bottom: 40px;
   height: 220px;
   object-fit: cover;
   object-position: center;
+  border-radius:4px 4px 0px 0px;
 }
 
 .clothing-meta {
