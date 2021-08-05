@@ -248,9 +248,15 @@ body {
 .product {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
+  border: 2px solid #C7CDEE;
   width: 100%;
+  height: 460px;
   border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
 }
 
 .product .thumbnail {
@@ -434,18 +440,6 @@ width: 100%;
   background-color: blue;
 }
 
-/* 
- *products page 
- */
- /*.wrapper .page-content .products-banner {
-display: flex;
-margin-bottom: 40px;
-}
-
-.wrapper .page-content .products-banner img {
-  width: 100%;
-  height: 400px;
-} */
 
 .categories {
   display: flex;
@@ -501,7 +495,7 @@ margin-bottom: 40px;
 
 .product-article img {
   width: 100%;
-  height: 200px;
+  height: 400px;
   margin-bottom: 40px;
   object-fit: cover;
   object-position: center;
